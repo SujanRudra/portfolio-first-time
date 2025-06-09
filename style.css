@@ -32,6 +32,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    overflow-x: hidden;
 }
 
 nav {
@@ -48,6 +49,7 @@ nav ul {
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 nav li {
@@ -118,7 +120,7 @@ nav a:active {
 }
 
 #threeline {
-    padding: 0 10px;
+    padding: 0 5px;
     display: none;
     align-items: center;
 }
@@ -158,7 +160,7 @@ nav a:active {
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autorun 20s linear infinite;
-    animation-play-state: running;
+    animation-play-state: paused;
     animation-direction: normal;
 }
 
@@ -256,6 +258,12 @@ nav a:active {
     .drawer {
         width: 100%;
     }
+
+.drawer li:first-child {
+    margin: auto;
+    align-items: start;
+    font-size: 20px;
+}
 
     #closeIcon svg {
         justify-content: flex-start;
