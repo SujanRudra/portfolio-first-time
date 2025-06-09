@@ -158,7 +158,7 @@ nav a:active {
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autorun 20s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
     animation-direction: normal;
 }
 
