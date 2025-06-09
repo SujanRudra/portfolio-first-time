@@ -6,12 +6,19 @@
 body {
     color: #ffffff;
     min-height: 100vh;
+    max-width: 100vw;
+    box-sizing: border-box;
     background-image: url(andromeda.jpg);
     background-size: cover;
     background-attachment: fixed;
+    overflow-x:hidden ;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* html{
+    width: 100vw;
+} */
 
 .section {
     height: 100vh;
@@ -49,6 +56,7 @@ nav ul {
     display: flex;
     justify-content: end;
     align-items: center;
+    overflow-x: hidden;
     flex-wrap: nowrap;
 }
 
@@ -59,7 +67,7 @@ nav li {
     align-items: center;
 }
 
-nav li:first-child {
+.nav-text {
     margin: auto;
     font-size: 25px;
 }
@@ -193,7 +201,7 @@ nav a:active {
     object-fit: cover;
 }
 
-.projectintro{
+.projectintro {
     position: absolute;
     bottom: 0%;
 }
@@ -211,6 +219,21 @@ nav a:active {
 #Contact {
     background-color: rgba(204, 21, 192, 0.192);
     z-index: 60;
+    text-align: center;
+    overflow-wrap: break-word;
+    /* key to wrapping long words */
+    word-break: break-word;
+    /* fallback for old browsers */
+    box-sizing: border-box;
+}
+#Contact h1 {
+    font-size: clamp(1.2rem, 4vw, 2rem); /* responsive font size */
+  margin: 0.5rem 0;
+}
+
+#Contact h1:last-of-type {
+  font-family: monospace;
+  word-break: break-all; /* breaks long email string if needed */
 }
 
 @media (max-width: 1024px) {
@@ -259,11 +282,24 @@ nav a:active {
         width: 100%;
     }
 
-.drawer li:first-child {
-    margin: auto;
-    align-items: start;
-    font-size: 20px;
-}
+    ul .nav-text {
+        margin: auto;
+        padding: 0;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: 500;
+        color: #aafef4;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+    ul #threeline {
+        padding: 0 10px;
+    }
 
     #closeIcon svg {
         justify-content: flex-start;
