@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Screenshot 2024-12-09 192151.png">
+    <script src="logic.js"></script>
+    <title>SUJAN RUDRA</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-text">Welcome to the Matrix </li>
+                <li class="menu"><a href="#Home">Home</a></li>
+                <li class="menu"><a href="#Projects">Projects</a></li>
+                <li class="menu"><a href="#About">About</a></li>
+                <li class="menu"><a href="#Service">Service</a></li>
+                <li class="menu"><a href="#Contact">Contact</a></li>
+                <li id="threeline" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px"
+                        viewBox="0 -960 960 960" width="30px" fill="#e3e3e3">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></li>
+            </ul>
+            <ul class="drawer">
+                <li id="closeIcon" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px"
+                        viewBox="0 -960 960 960" width="30px" fill="#e3e3e3">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></li>
+                <li class="sideMenu"><a href="#Home">Home</a></li>
+                <li class="sideMenu"><a href="#Projects">Projects</a></li>
+                <li class="sideMenu"><a href="#About">About</a></li>
+                <li class="sideMenu"><a href="#Service">Service</a></li>
+                <li class="sideMenu"><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section" id="Home">
+            <h1>Hello My Friend</h1><br>
+            <h3>Nice To meet You.<br><br>
+                <h2>I'm Sujan Rudra,<br> The Developer Of This Website.</h2><br> Let's Explore This Website With Me.
+            </h3>
+        </div>
+        <div class="section" id="Projects">
+            <div class="banner">
+                <div class="slider" style="--quantity: 5;">
+                    <div class="projectitem" style="--position: 1;"><img src="Screenshot 2024-12-09 192151.png"
+                            alt="Pic"></div>
+                    <div class="projectitem" style="--position: 2;"><img src="Screenshot 2024-12-09 192151.png"
+                            alt="Pic"></div>
+                    <div class="projectitem" style="--position: 3;"><img src="Screenshot 2024-12-09 192151.png"
+                            alt="Pic"></div>
+                    <div class="projectitem" style="--position: 4;"><img src="Screenshot 2024-12-09 192151.png"
+                            alt="Pic"></div>
+                    <div class="projectitem" style="--position: 5;"><img src="Screenshot 2024-12-09 192151.png"
+                            alt="Pic"></div>
+                </div>
+                <div class="projectintro">
+                    <h3>Choose Any One Of The Projects</h3>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="About">
+            <h1>About This Website</h1><br>
+            <h3>Yet To Be Added</h3>
+        </div>
+        <div class="section" id="Service">
+            <h1>Oops!</h1><br>
+            <h2>I Swear, I'm Deffiniatly Gonna Add Some Services</h2>
+        </div>
+    </main>
+    <footer class="section" id="Contact">
+        <h1>You Can Send Me Email On</h1>
+        <br>
+        <h1>sujanrudra34@gmail.com</h1>
+    </footer>
+</body>
+
+</html>
